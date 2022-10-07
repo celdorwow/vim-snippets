@@ -54,6 +54,10 @@ snippet desc "Description" bi
 \end{description}
 endsnippet
 
+snippet itm "Item" wi
+\item ${0:${VISUAL}}
+endsnippet
+
 snippet lemma "Lemma" bi
 \begin{lemma}
 	${0:${VISUAL}}
@@ -177,6 +181,40 @@ snippet table "Table environment" b
 \end{table}
 endsnippet
 
+#############
+# TEXT MODE #
+#############
+
+snippet bf "Text bold" wi
+\textbf{${1:${VISUAL}}}$0
+endsnippet
+
+snippet it "Text italic" wi
+\textit{${1:${VISUAL}}}$0
+endsnippet
+
+snippet sl "Text slanted" wi
+\textsl{${1:${VISUAL}}}$0
+endsnippet
+
+snippet ce "\centering" bi
+\begin{center}
+	${0:${VISUAL}}
+\end{center}
+endsnippet
+
+snippet nf "Normal font" wi
+\normalfont{${1:${VISUAL}}}$0
+endsnippet
+
+snippet ns "Normal size" wi
+\normalfont{${1:${VISUAL}}}$0
+endsnippet
+
+snippet un "Underline" wi
+\underline{${1:${VISUAL}}}$0
+endsnippet
+
 ########
 # MATH #
 ########
@@ -247,24 +285,20 @@ snippet srto "... Root" wi
 \sqrt[$1]{${2:${VISUAL}}}$0
 endsnippet
 
-snippet bf "Bold" wi
-\bf{${1:${VISUAL}}}$0
+snippet mbf "Bold" wi
+\mathbf{${1:${VISUAL}}}$0
 endsnippet
 
-snippet it "Italic" wi
-\it{${1:${VISUAL}}}$0
+snippet mit "Italic" wi
+\mathit{${1:${VISUAL}}}$0
 endsnippet
 
-snippet un "Underline" wi
-\un{${1:${VISUAL}}}$0
+snippet mrm "Text" wi
+\mathrm{${1:${VISUAL}}}$0
 endsnippet
 
-snippet rm "Text" wi
-\rm{${1:${VISUAL}}}$0
-endsnippet
-
-snippet itm "Item" wi
-\item ${0:${VISUAL}}
+snippet bs "Bold symbol" wi
+\boldsymbol{${1:${VISUAL}}}$0
 endsnippet
 
 snippet ceil "Ceil" w
